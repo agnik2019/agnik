@@ -115,8 +115,6 @@ const Award = ({ title, description,link }) => {
 
 const Carousel = styled(Slider)`
 background-color: #29293d;
-
-
 `;
 const Details = styled(motion.div)`
   color: white;
@@ -145,11 +143,10 @@ const Awards = styled.div`
   align-items: center;
   justify-content: space-around;
  
-
 `;
 
 const AwardStyle = styled.div`
-  padding: 5rem;
+  padding: 2rem;
   h3 {
     font-size: 2rem;
   }
@@ -162,6 +159,7 @@ const AwardStyle = styled.div`
   p {
     padding: 2rem 0rem;
   }
+  
 `;
 const ImageDisplay = styled.div`
   min-height: 50vh;

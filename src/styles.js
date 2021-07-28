@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const About = styled(motion.div)`
-  min-height: 90vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   margin-right: 4%;
@@ -41,8 +41,6 @@ export const Image = styled(motion.div)`
 
 width:500px;
   height: 800px;
- //background-color:  #00b36b;   #c2e38a
- //background-color: linear-gradient(to right ,#00b36b, #c2e38a);
  background-image: linear-gradient(to right, green , yellow);
   border-radius: 50%;
    display: flex;
