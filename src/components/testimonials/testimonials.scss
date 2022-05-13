@@ -5,7 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15rem 15rem 15rem 15rem;
+  padding-top:100px;
+  padding-bottom: 150px;
   object-fit: cover;
 
   @include mobile{

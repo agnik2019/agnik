@@ -63,12 +63,11 @@ const ServicesSection = () => {
 };
 
 const Services = styled(About)`
-  min-height: 90vh;
+  height:700px;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 10rem;
   h2 {
     padding-bottom: 5rem;
   }

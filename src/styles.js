@@ -10,7 +10,7 @@ export const About = styled(motion.div)`
   justify-content: space-between;
    padding: 5rem 10rem;
   color: white;
-  overflow-x: hidden;
+  overflow-x: visible;
 
   @media screen and (max-width: 1100px) {
    display: flex;
@@ -38,9 +38,8 @@ export const Description = styled(motion.div)`
 `;
 export const Image = styled(motion.div)`
 
-
-width:500px;
-  height: 800px;
+width:450px;
+  height: 670px;
  background-image: linear-gradient(to right, green , yellow);
   border-radius: 50%;
    display: flex;

@@ -38,8 +38,6 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie variants={movieContainer}>
-      <p>Click on the image to see my domain related projects</p>
-
         <motion.h2 variants={fade}>Data Science</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/dataScience">
@@ -79,12 +77,9 @@ const OurWork = () => {
 };
 
 const Work = styled(motion.div)`
-  min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
-  h2 {
-    padding: 1rem 0rem;
-  }
+
   @media (max-width: 1500px) {
     padding: 2rem 2rem;
   }
