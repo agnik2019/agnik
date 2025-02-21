@@ -16,7 +16,7 @@ const AboutSection = () => {
             showCursor: true,
             backDelay:1500,
             backSpeed:60,
-            strings:["Web ","Android "]
+            strings:["Generative AI","Graph Mining ","NLP "]
         })
 
     },[])
@@ -28,19 +28,19 @@ const AboutSection = () => {
       <Description>
         <Title>
           <Hide>
-            <motion.h2 variants={titleAnim}>Hi There,</motion.h2>
+            <motion.h2 variants={titleAnim}>Hello নমস্কার,</motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>I'm Agnik Saha</motion.h2>
+            <motion.h2 variants={titleAnim}>I'm Agnik Saha (আগ্নিক সাহা)</motion.h2>
           </Hide>
           
           <Hide>
             <motion.h2 variants={titleAnim}>
-              <span ref={textRef}>Software</span> 
+              <span ref={textRef}>AI</span> 
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim}>Developer</motion.h2>
+            <motion.h2 variants={titleAnim}>Researcher</motion.h2>
           </Hide>
           </Title>
        

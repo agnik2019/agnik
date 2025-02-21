@@ -77,38 +77,39 @@ const OurWork = () => {
 };
 
 const Work = styled(motion.div)`
+  margin-top: 5rem; 
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 8rem 10rem 15rem 10rem; /* ✅ Increased top padding */
 
   @media (max-width: 1500px) {
     padding: 2rem 2rem;
+      min-height: 100vh; /* ✅ Fix: Ensures it takes full viewport height */
+
   }
 `;
 
 const Movie = styled(motion.div)`
-
   padding-bottom: 3rem;
+
   .line {
     height: 0.5rem;
     background: #23d997;
     margin-bottom: 3rem;
   }
 
-
   img {
-    opacity:1;
+    opacity: 1;
     width: 100%;
-    height: 70vh;
+    height: auto; /* ✅ Fix: Adjust height dynamically */
+    max-height: 70vh; /* Prevents it from becoming too large */
     object-fit: cover;
 
-
-    &:hover{
-        opacity:0.4;
+    &:hover {
+      opacity: 0.4;
     }
   }
-
-
 `;
+
 
 
 const Hide = styled.div`

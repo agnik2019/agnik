@@ -37,33 +37,32 @@ export const Description = styled(motion.div)`
 
 `;
 export const Image = styled(motion.div)`
-
-width:450px;
-  height: 670px;
- background-image: linear-gradient(to right, green , yellow);
+  width: 100%;
+  max-width: 500px; /* Allows image to grow slightly on big screens */
+  height: auto;
+  aspect-ratio: 3/4;
+  background-image: linear-gradient(to right, green, yellow);
   border-radius: 50%;
-   display: flex;
-   align-items: flex-end;
-  justify-content: space-between;
-   float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  flex: 1;
+  overflow: hidden;
 
-  z-index:2;
-    flex:1;
-    overflow:hidden;
-    img{
-        width:100%;
-        height:80vh;
-        object-fit:cover;
-    }
-    @media screen and (max-width: 1100px) {
-      z-index:-1;
-     // flex:0.3;
-      width:350px;
-      height: 450px;
-  img{
-        height:50vh;
-    }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 1200px) {
+    max-width: 350px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 280px;
   }
 `;
-
  
