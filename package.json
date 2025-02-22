@@ -23,7 +23,8 @@
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.2.0"
   },
-  "scripts": {
+"homepage": "https://agnik2019.github.io",
+"scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
