@@ -13,13 +13,13 @@ export default function Menu({menuOpen, setMenuOpen}) {
                     <Link to ="/about" > About</Link>
                 </li>
                 <li onClick={()=> setMenuOpen(false)}>
-                    <Link to ="/portfolio">Portfolio</Link>
+                    <Link to ="/portfolio">Research</Link>
                 </li>
                 <li onClick={()=> setMenuOpen(false)}>
                     <Link to ="/work">Works</Link>
                 </li>
                 <li onClick={()=> setMenuOpen(false)}>
-                    <Link to ="/testimonials">Testimonials</Link>
+                    <Link to ="/testimonials">Collaborators</Link>
                 </li>  
                  <li onClick={()=> setMenuOpen(false)}>
                     <Link to ="/contact">Contact</Link>

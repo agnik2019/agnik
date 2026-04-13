@@ -1,126 +1,156 @@
-@import "../../global.scss";
-
 .testimonials {
-  background-color: white;
+  background: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:100px;
-  padding-bottom: 1500px;
-  object-fit: cover;
-
-  @include mobile{
-    justify-content: space-around;
-  }
-
+  padding: 70px 20px 90px;
 
   h1 {
-    font-size: 50px;
+    font-size: 56px;
+    margin: 0 0 35px 0;
+    color: #1f2937;
+    text-align: center;
+  }
 
-    @include mobile{
-      font-size: 20px;
+  .group {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 50px;
+
+    h2 {
+      font-size: 30px;
+      color: #ce99ff;
+      margin-bottom: 24px;
+      text-align: center;
     }
   }
 
   .container {
     width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
+    display: grid;
+    gap: 28px;
     justify-content: center;
-    padding-top: 40px;
+  }
 
-    @include mobile{
-      flex-direction: column;
-      height: 100%;
+  .container.advisors {
+    grid-template-columns: repeat(3, minmax(260px, 320px));
+  }
+
+  .container.collaborators {
+    grid-template-columns: repeat(2, minmax(260px, 320px));
+  }
+
+  .card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    padding: 26px 22px 24px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    min-height: 360px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+    border: 1px solid rgba(206, 153, 255, 0.12);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.14);
+    }
+
+    &.featured {
+      border: 1px solid rgba(206, 153, 255, 0.35);
+    }
+
+    .avatarWrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .user {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #7c3aed;
+      background: #f3f4f6;
+    }
+
+    .center {
+      background: #f6f0ff;
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 17px;
+      line-height: 1.65;
+      color: #374151;
+      min-height: 122px;
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+
+    .bottom {
+      margin-top: auto;
+
+      h3 {
+        margin: 0 0 8px 0;
+        font-size: 31px;
+        line-height: 1.15;
+        color: #111827;
+        word-break: break-word;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 19px;
+        line-height: 1.45;
+        color: #6b7280;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .container.advisors,
+    .container.collaborators {
+      grid-template-columns: repeat(2, minmax(260px, 320px));
+    }
+  }
+
+  @media (max-width: 700px) {
+    padding: 55px 16px 70px;
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 28px;
+    }
+
+    .group {
+      h2 {
+        font-size: 24px;
+      }
+    }
+
+    .container.advisors,
+    .container.collaborators {
+      grid-template-columns: minmax(260px, 340px);
     }
 
     .card {
-      width: 250px;
-      height: 70%;
-      border-radius: 10px;
-      box-shadow: 0px 0px 15px -8px black;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding: 20px;
-      transition: all 1s ease;
+      min-height: auto;
 
-      @include mobile{
-        height: 180px;
-        margin: 10px 0;
-      }
+      .bottom {
+        h3 {
+          font-size: 27px;
+        }
 
-      &.featured{
-          width: 300px;
-          height: 75%;
-          margin: 0 30px;
-
-          @include mobile{
-            width: 250px;
-            height: 180px;
-            margin: 1px;
-          }
-      }
-
-      &:hover{
-          transform: scale(1.1);
-      }
-
-      .top {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        img {
-          &.left,
-          &.right {
-            height: 25px;
-          }
-          &.user {
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 30px;
-
-            @include mobile{
-              width: 30px;
-              height: 30px;
-            }
-          }
+        h4 {
+          font-size: 17px;
         }
       }
 
       .center {
-        padding: 10px;
-        border-radius: 10px;
-        background-color: rgb(250, 244, 245);
-
-        @include mobile{
-          font-size: 12px;
-          padding: 5px;
-        }
-      }
-      .bottom {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-
-        h3 {
-          margin-bottom: 5px;
-
-          @include mobile{
-            font-size: 14px;
-          }
-        }
-        h4{
-            color: rgb(121, 115, 115);
-            @include mobile{
-              font-size: 13px;
-            }
-        }
+        font-size: 16px;
       }
     }
   }

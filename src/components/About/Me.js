@@ -1,10 +1,9 @@
 import React from "react";
-//import { Container, Row, Col } from "react-bootstrap";
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import "./Me.css"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "./Me.css";
 
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
@@ -25,10 +24,11 @@ function Me() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              About <strong className="purple">Me</strong>
             </h1>
             <Aboutcard />
           </Col>
+
           <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
@@ -37,17 +37,18 @@ function Me() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          Technical <strong className="purple">Expertise</strong>
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          Frameworks & <strong className="purple">Tools</strong>
         </h1>
-        <Toolstack />
 
+        <Toolstack />
       </Container>
     </Container>
   );

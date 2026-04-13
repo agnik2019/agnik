@@ -1,88 +1,87 @@
-import "./portfolio.scss"
-import React from 'react';
-
-import PortfolioList from '../portfolioList/PortfolioList';
-import {useEffect, useState} from "react";
+import "./portfolio.scss";
+import React, { useEffect, useState } from "react";
+import PortfolioList from "../portfolioList/PortfolioList";
 import {
-    featuredPortfolio,
-    webPortfolio,
-    mobilePortfolio,
-    designPortfolio,
-    contentPortfolio,
-  } from "../../data";
+  featuredPortfolio,
+  llmPortfolio,
+  healthAiPortfolio,
+  graphPortfolio,
+  publicationsPortfolio,
+} from "../../data";
 
 export default function Portfolio() {
+  const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
 
-    const [selected, setSelected] = useState("featured")
-    const [data, setData] = useState([])
+  const list = [
+    { id: "featured", title: "Featured" },
+    { id: "llm", title: "LLMs & GenAI" },
+    { id: "health", title: "Health AI" },
+    { id: "graph", title: "Graph & Network Science" },
+    { id: "publications", title: "Publications" },
+  ];
 
-
-    const list=[       
-        {
-            id:"featured",
-            title:"Featured"
-        },
-        {
-            id:"web",
-            title:"Web App"
-        },
-        {
-            id:"mobile",
-            title:"Mobile App"
-        },
-        {
-            id:"content",
-            title:"Content"
-        },
-        {
-            id:"designing",
-            title:"Designing"
-        },
-    ];
-
-    useEffect(()=>{
-        switch(selected){
-            case "featured":
-                setData(featuredPortfolio)
-                break;
-                case "web":
-        setData(webPortfolio);
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
         break;
-        case "mobile":
-            setData(mobilePortfolio);
-            break;
-        case "design":
-            setData(designPortfolio);
-            break;
-        case "content":
-            setData(contentPortfolio);
-            break;
-        default:
-            setData(featuredPortfolio);
-        }
+      case "llm":
+        setData(llmPortfolio);
+        break;
+      case "health":
+        setData(healthAiPortfolio);
+        break;
+      case "graph":
+        setData(graphPortfolio);
+        break;
+      case "publications":
+        setData(publicationsPortfolio);
+        break;
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
 
-    },[selected])
-    return (
-        <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
-            <ul>
-                {list.map((item) => (
-                    <PortfolioList title={item.title} 
-                    active={selected === item.id} 
-                    setSelected ={setSelected}
-                    id={item.id} />
-                ))}
-            </ul>
-            <div className="container">
-                {data.map(d=>(
-                    <div className="item">
-                    <img src={d.img} alt=""/>
-                    <h3>{d.title}</h3>
-                </div>
-                ))}
-                
+  return (
+    <div className="portfolio" id="research">
+      <h1>Research</h1>
 
+      <ul>
+        {list.map((item) => (
+          <PortfolioList
+            key={item.id}
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
+      </ul>
+
+      <div className="container">
+        {data.map((d) => (
+          <a
+            key={d.id}
+            className="item"
+            href={d.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={d.img}
+              alt={d.title}
+              onError={(e) => {
+                e.currentTarget.src =
+                  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80";
+              }}
+            />
+            <div className="overlay">
+              <h3>{d.title}</h3>
             </div>
-        </div>
-    )
+          </a>
+        ))}
+      </div>
+    </div>
+  );
 }
