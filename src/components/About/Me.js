@@ -26,7 +26,44 @@ function Me() {
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
               About <strong className="purple">Me</strong>
             </h1>
+
             <Aboutcard />
+
+            <div style={{ marginTop: "30px", color: "white" }}>
+              <h1 style={{ fontSize: "2.1em", paddingBottom: "15px" }}>
+                Education <strong className="purple">Background</strong>
+              </h1>
+
+              <p style={{ textAlign: "justify", marginBottom: "18px" }}>
+                I am currently pursuing my{" "}
+                <strong className="purple">PhD in Computer Science</strong> at{" "}
+                <strong className="purple">Georgia State University</strong>,
+                Atlanta, Georgia, USA (2024 - Present), with a CGPA of{" "}
+                <strong className="purple">3.86 / 4.0</strong>.
+              </p>
+
+              <p style={{ textAlign: "justify", marginBottom: "18px" }}>
+                I completed my{" "}
+                <strong className="purple">MTech in Computer Science</strong> from{" "}
+                <strong className="purple">
+                  Indian Institute of Technology, Kharagpur
+                </strong>{" "}
+                (2021 - 2023), with a CGPA of{" "}
+                <strong className="purple">8.67 / 10</strong>. During this period,
+                I worked on research related to online knowledge communities, data
+                enrichment, and large-scale knowledge analysis.
+              </p>
+
+              <p style={{ textAlign: "justify", marginBottom: "10px" }}>
+                Before that, I earned my{" "}
+                <strong className="purple">BTech in Computer Science</strong> from{" "}
+                <strong className="purple">
+                  Maulana Abul Kalam Azad University of Technology
+                </strong>
+                , West Bengal, India (2017 - 2021), with a CGPA of{" "}
+                <strong className="purple">9.20 / 10</strong>.
+              </p>
+            </div>
           </Col>
 
           <Col

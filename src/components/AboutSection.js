@@ -17,7 +17,6 @@ const AboutSection = () => {
       backSpeed: 60,
       strings: [
         'Generative AI',
-        'Neuro-Symbolic AI',
         'Knowledge Graphs',
         'Agentic AI',
         'NLP',
@@ -38,11 +37,11 @@ const AboutSection = () => {
       <Description>
         <Title>
           <Hide>
-            <motion.h2 variants={titleAnim}>Hello নমস্কার,</motion.h2>
+            <motion.h2 variants={titleAnim}>Hello,</motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>
-              I&apos;m Agnik Saha (আগ্নিক সাহা)
+              I&apos;m Agnik Saha
             </motion.h2>
           </Hide>
           <Hide>
