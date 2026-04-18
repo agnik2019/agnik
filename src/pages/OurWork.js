@@ -81,7 +81,7 @@ const Work = styled(motion.div)`
   overflow: hidden;
   padding: 8rem 10rem 15rem 10rem; /* ✅ Increased top padding */
 
-  @media (max-width: 1500px) {
+  @media (max-width: 700px) {
     padding: 2rem 2rem;
       min-height: 100vh; /* ✅ Fix: Ensures it takes full viewport height */
 
