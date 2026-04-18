@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/agnik/static/css/main.120caa2a.chunk.css",
-    "main.js": "/agnik/static/js/main.d0fb993e.chunk.js",
-    "main.js.map": "/agnik/static/js/main.d0fb993e.chunk.js.map",
+    "main.css": "/agnik/static/css/main.af80d738.chunk.css",
+    "main.js": "/agnik/static/js/main.0017c75c.chunk.js",
+    "main.js.map": "/agnik/static/js/main.0017c75c.chunk.js.map",
     "runtime-main.js": "/agnik/static/js/runtime-main.7e3fbc04.js",
     "runtime-main.js.map": "/agnik/static/js/runtime-main.7e3fbc04.js.map",
     "static/css/2.010fdf6f.chunk.css": "/agnik/static/css/2.010fdf6f.chunk.css",
     "static/js/2.9b86bcdf.chunk.js": "/agnik/static/js/2.9b86bcdf.chunk.js",
     "static/js/2.9b86bcdf.chunk.js.map": "/agnik/static/js/2.9b86bcdf.chunk.js.map",
     "index.html": "/agnik/index.html",
-    "precache-manifest.a99e083e25ba92b85854ac37773868be.js": "/agnik/precache-manifest.a99e083e25ba92b85854ac37773868be.js",
+    "precache-manifest.3d82b3c5c1b016fb7af11b77c169852f.js": "/agnik/precache-manifest.3d82b3c5c1b016fb7af11b77c169852f.js",
     "service-worker.js": "/agnik/service-worker.js",
     "static/css/2.010fdf6f.chunk.css.map": "/agnik/static/css/2.010fdf6f.chunk.css.map",
-    "static/css/main.120caa2a.chunk.css.map": "/agnik/static/css/main.120caa2a.chunk.css.map",
+    "static/css/main.af80d738.chunk.css.map": "/agnik/static/css/main.af80d738.chunk.css.map",
     "static/js/2.9b86bcdf.chunk.js.LICENSE.txt": "/agnik/static/js/2.9b86bcdf.chunk.js.LICENSE.txt",
     "static/media/about.png": "/agnik/static/media/about.8fb0e5fd.png",
     "static/media/android.jpg": "/agnik/static/media/android.22e089fc.jpg",
@@ -30,7 +30,7 @@
     "static/js/runtime-main.7e3fbc04.js",
     "static/css/2.010fdf6f.chunk.css",
     "static/js/2.9b86bcdf.chunk.js",
-    "static/css/main.120caa2a.chunk.css",
-    "static/js/main.d0fb993e.chunk.js"
+    "static/css/main.af80d738.chunk.css",
+    "static/js/main.0017c75c.chunk.js"
   ]
 }
