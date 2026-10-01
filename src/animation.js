@@ -12,15 +12,33 @@ export const pageAnimation = {
   },
   exit: {
     opacity: 0,
-    transition: { ease: 'easeOut', duration: 0.5 },
+    transition: { ease: 'easeOut', duration: 0.28 },
   },
 };
 
 export const titleAnim = {
-  hidden: { y: 200 },
+  hidden: { y: 48 },
   show: {
     y: 0,
-    transition: { type: 'tween', ease: 'easeOut', duration: 0.75 },
+    transition: { type: 'tween', ease: 'easeOut', duration: 0.7 },
+  },
+};
+
+export const heroPhoto = {
+  hidden: { scale: 1.25, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: { type: 'tween', ease: 'easeOut', duration: 0.85 },
+  },
+};
+
+export const rise = {
+  hidden: { opacity: 0, y: 18 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { type: 'tween', ease: 'easeOut', duration: 0.45 },
   },
 };
 
