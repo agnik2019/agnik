@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78f50635b8612b75fed088d445690bec",
+    "revision": "10d46e1e4764895577d4955ac96891e0",
     "url": "/agnik/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnik/static/css/2.032362bf.chunk.css"
   },
   {
-    "revision": "3c55d0773e8adc73b0db",
-    "url": "/agnik/static/css/main.19015785.chunk.css"
+    "revision": "3cdea221a49b3487d584",
+    "url": "/agnik/static/css/main.0e7f6f57.chunk.css"
   },
   {
     "revision": "619003e78896c7a888ba",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/agnik/static/js/2.c4df803b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c55d0773e8adc73b0db",
-    "url": "/agnik/static/js/main.f2bf33c9.chunk.js"
+    "revision": "3cdea221a49b3487d584",
+    "url": "/agnik/static/js/main.6c3a6de9.chunk.js"
   },
   {
     "revision": "ca8ac5b90f9a4231e993",
