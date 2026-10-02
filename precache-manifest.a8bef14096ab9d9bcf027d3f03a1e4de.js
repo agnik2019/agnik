@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f3e5f2b05aa516fd8a74d791450be64",
+    "revision": "78f50635b8612b75fed088d445690bec",
     "url": "/agnik/index.html"
   },
   {
-    "revision": "eec32e11a67c735cadb5",
+    "revision": "619003e78896c7a888ba",
     "url": "/agnik/static/css/2.032362bf.chunk.css"
   },
   {
-    "revision": "45f57ea1627c5f6afae8",
-    "url": "/agnik/static/css/main.506a6f84.chunk.css"
+    "revision": "3c55d0773e8adc73b0db",
+    "url": "/agnik/static/css/main.19015785.chunk.css"
   },
   {
-    "revision": "eec32e11a67c735cadb5",
-    "url": "/agnik/static/js/2.58005951.chunk.js"
+    "revision": "619003e78896c7a888ba",
+    "url": "/agnik/static/js/2.c4df803b.chunk.js"
   },
   {
     "revision": "899b7d5cd87f8c87980de8ef23ea1506",
-    "url": "/agnik/static/js/2.58005951.chunk.js.LICENSE.txt"
+    "url": "/agnik/static/js/2.c4df803b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "45f57ea1627c5f6afae8",
-    "url": "/agnik/static/js/main.537b9813.chunk.js"
+    "revision": "3c55d0773e8adc73b0db",
+    "url": "/agnik/static/js/main.f2bf33c9.chunk.js"
   },
   {
     "revision": "ca8ac5b90f9a4231e993",
