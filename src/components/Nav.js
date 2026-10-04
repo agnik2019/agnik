@@ -5,7 +5,9 @@ import { useTheme } from "./Theme";
 const links = [
   { to: "/", label: "Home", exact: true },
   { to: "/research", label: "Research", exact: true },
+  { to: "/teaching", label: "Teaching", exact: true },
   { to: "/publications", label: "Publications", exact: true },
+  { to: "/collaborators", label: "Collaborators", exact: true },
   { to: "/cv", label: "CV", exact: true },
 ];
 
@@ -28,11 +30,12 @@ export default function Nav() {
         <div className="nav-actions">
           <button
             type="button"
-            className="theme-toggle"
+            className={dark ? "theme-toggle is-dark" : "theme-toggle"}
             aria-pressed={dark}
+            aria-label={dark ? "Use white background" : "Use black background"}
             onClick={toggleTheme}
           >
-            {dark ? "White" : "Black"}
+            <span className="theme-knob" aria-hidden="true" />
           </button>
           <button
             type="button"

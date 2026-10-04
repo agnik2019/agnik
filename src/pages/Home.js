@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import portrait from "../img/man1.png";
-import { bio, news, profile, publications } from "../content";
+import { bio, collaboratorGroups, news, profile, publications } from "../content";
 import PublicationList from "../components/PublicationList";
-import Collaborators from "../components/Collaborators";
 import Page from "../components/Page";
 import Reveal from "../components/Reveal";
 import { fade, heroPhoto, lineAnim, titleAnim } from "../animation";
@@ -109,7 +108,38 @@ export default function Home() {
         </section>
       </Reveal>
 
-      <Collaborators />
+      <Reveal>
+        <section className="section" id="collaborators" aria-labelledby="advisors-heading">
+          <h2 id="advisors-heading">Advisors</h2>
+          <ul className="advisor-list">
+            {collaboratorGroups
+              .find((group) => group.id === "advisors")
+              .people.map((person) => (
+                <li key={person.id}>
+                  <span className="advisor-name">{person.name}</span>
+                  <span className="meta">
+                    {person.role}, {person.affiliation}
+                  </span>
+                  <span className="advisor-links">
+                    {person.scholar ? (
+                      <a href={person.scholar} target="_blank" rel="noopener noreferrer">
+                        Scholar
+                      </a>
+                    ) : null}
+                    {person.homepage ? (
+                      <a href={person.homepage} target="_blank" rel="noopener noreferrer">
+                        Homepage
+                      </a>
+                    ) : null}
+                  </span>
+                </li>
+              ))}
+          </ul>
+          <Link className="more-link" to="/collaborators">
+            Research collaborators
+          </Link>
+        </section>
+      </Reveal>
 
       <Reveal>
         <section className="section" id="contact" aria-labelledby="contact-heading">

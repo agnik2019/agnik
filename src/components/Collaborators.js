@@ -29,16 +29,6 @@ function Group({ group }) {
               {person.affiliation}
             </p>
             {person.interests ? <p>{person.interests}</p> : null}
-            {person.citations ? (
-              <p className="meta">
-                {person.citations} citations · h-index {person.hIndex} · i10-index{" "}
-                {person.i10}
-              </p>
-            ) : null}
-            {person.note ? <p className="meta">{person.note}</p> : null}
-            {person.shared ? (
-              <p className="meta">Shared paper: {person.shared}</p>
-            ) : null}
             <ul className="resource-links">
               {person.scholar ? (
                 <li>
@@ -71,14 +61,13 @@ function Group({ group }) {
 
 export default function Collaborators() {
   return (
-    <section className="section" id="collaborators" aria-labelledby="collaborators-heading">
-      <h2 id="collaborators-heading">Collaborators</h2>
+    <div id="collaborators">
       <p className="lede">
-        Advisors and coauthors, with affiliations and research areas taken from Google Scholar.
+        Advisors and research collaborators, with affiliations and research areas.
       </p>
       {collaboratorGroups.map((group) => (
         <Group group={group} key={group.id} />
       ))}
-    </section>
+    </div>
   );
 }

@@ -1,6 +1,6 @@
 export const profile = {
   name: "Agnik Saha",
-  role: "PhD student, Computer Science",
+  role: "PhD candidate, Computer Science",
   affiliation: "Georgia State University",
   location: "Atlanta, Georgia",
   email: "asaha8@gsu.edu",
@@ -30,32 +30,13 @@ export const bio = [
   "My focus is integrating knowledge graphs with large language models. The use cases are health communication, marketing communication, and data democratization for the enterprise, by combining heterogeneous knowledge communities.",
   "Language models are now used to help clinicians explain care and to help marketers decide what to do next. They sound fluent, but they are not built for decisions that have to be accurate, culturally appropriate, and easy to follow.",
   "I work on that gap in two places. In healthcare, I test whether models can explain cancer screening in language that is safe and accessible, including across a full conversation rather than a single reply. In marketing, I connect theory with consumer behavior by building knowledge graphs and using them to guide what a model generates.",
-  "The approach joins flexible language with knowledge that can be checked. I am a PhD student in computer science at Georgia State University.",
+  "The approach joins flexible language with knowledge that can be checked. I am a PhD candidate in computer science at Georgia State University.",
 ];
 
 export const publications = [
   {
-    id: "jamia-multiturn",
-    featured: false,
-    title:
-      "Theory-Guided Multi-Turn Cancer Screening Communication With Large Language Models: Framework Development and Evaluation Study",
-    authors: "Agnik Saha (first author) et al.",
-    venue: "Under review, JAMIA Open",
-    year: 2026,
-    links: [],
-  },
-  {
-    id: "ieee-kg",
-    featured: false,
-    title:
-      "Bridging Theory and Practice through LLM-Driven Knowledge Graph Construction",
-    authors: "Agnik Saha et al.",
-    venue: "Under review, IEEE International Conference on Big Data",
-    year: 2026,
-    links: [],
-  },
-  {
     id: "jmir-cancer",
+    section: "published",
     featured: true,
     title:
       "Large Language Models for Breast and Cervical Cancers Communication: Mixed Methods Evaluation Study Assessing Linguistic Quality, Safety, and Accessibility",
@@ -69,24 +50,8 @@ export const publications = [
     ],
   },
   {
-    id: "aacr-multiturn",
-    featured: true,
-    title:
-      "Evaluating Multi-turn Capability of Large Language Models in Cancer Communication",
-    authors:
-      "Agnik Saha, Victoria Churchill, Ugur Kursuncu, and Muhammed Y. Idris",
-    venue:
-      "Cancer Epidemiology, Biomarkers & Prevention, 34(9 Supplement), abstract B022. 18th AACR Conference on the Science of Cancer Health Disparities",
-    year: 2025,
-    links: [
-      {
-        label: "Abstract",
-        href: "https://aacrjournals.org/cebp/article/34/9_Supplement/B022/764625/Abstract-B022-Evaluating-multi-turn-capability-of",
-      },
-    ],
-  },
-  {
     id: "lvlm-toxicity",
+    section: "published",
     featured: true,
     title:
       "Playing Devil’s Advocate: Unmasking Toxicity and Vulnerabilities in Large Vision-Language Models",
@@ -103,6 +68,7 @@ export const publications = [
   },
   {
     id: "tinyml",
+    section: "published",
     featured: false,
     title:
       "TinyML for Cybersecurity: Deploying Optimized Deep Learning Models for On-Device Threat Detection on Resource-Constrained Devices",
@@ -118,7 +84,38 @@ export const publications = [
     ],
   },
   {
+    id: "ebb-flow",
+    section: "published",
+    featured: false,
+    title:
+      "Evaluating the Ebb and Flow: An In-depth Analysis of Question-Answering Trends across Diverse Platforms",
+    authors:
+      "Rima Hazra, Agnik Saha, Somnath Banerjee, and Animesh Mukherjee",
+    venue: "arXiv:2309.05961. Accepted as a poster",
+    year: 2024,
+    links: [{ label: "Preprint", href: "https://arxiv.org/abs/2309.05961" }],
+  },
+  {
+    id: "aacr-multiturn",
+    section: "abstract",
+    featured: true,
+    title:
+      "Evaluating Multi-turn Capability of Large Language Models in Cancer Communication",
+    authors:
+      "Agnik Saha, Victoria Churchill, Ugur Kursuncu, and Muhammed Y. Idris",
+    venue:
+      "Cancer Epidemiology, Biomarkers & Prevention, 34(9 Supplement), abstract B022. 18th AACR Conference on the Science of Cancer Health Disparities",
+    year: 2025,
+    links: [
+      {
+        label: "Abstract",
+        href: "https://aacrjournals.org/cebp/article/34/9_Supplement/B022/764625/Abstract-B022-Evaluating-multi-turn-capability-of",
+      },
+    ],
+  },
+  {
     id: "stackexchange",
+    section: "preprint",
     featured: true,
     title:
       "Unveiling User Engagement Patterns on Stack Exchange Through Network Analysis",
@@ -128,15 +125,43 @@ export const publications = [
     links: [{ label: "Preprint", href: "https://arxiv.org/abs/2409.08944" }],
   },
   {
-    id: "ebb-flow",
+    id: "jmir-anxiety",
+    section: "review",
     featured: false,
     title:
-      "Evaluating the Ebb and Flow: An In-depth Analysis of Question-Answering Trends across Diverse Platforms",
+      "Large Language Models Fine-Tuned on Reddit Data for Anxiety Support: Mixed Methods Evaluation",
     authors:
-      "Rima Hazra, Agnik Saha, Somnath Banerjee, and Animesh Mukherjee",
-    venue: "arXiv:2309.05961. Accepted as a poster",
-    year: 2024,
-    links: [{ label: "Preprint", href: "https://arxiv.org/abs/2309.05961" }],
+      "Ugur Kursuncu, Trilok Padhi, Gaurav Sinha, Jaya Krishna Mandivarapu, Agnik Saha, and Christopher R. Larrison",
+    venue: "Under review, JMIR",
+    year: 2026,
+    links: [
+      {
+        label: "Preprint",
+        href: "https://preprints.jmir.org/preprint/108387",
+      },
+    ],
+  },
+  {
+    id: "jamia-multiturn",
+    section: "review",
+    featured: false,
+    title:
+      "Theory-Guided Multi-Turn Cancer Screening Communication With Large Language Models: Framework Development and Evaluation Study",
+    authors: "Agnik Saha (first author) et al.",
+    venue: "Under review, JAMIA Open",
+    year: 2026,
+    links: [],
+  },
+  {
+    id: "ieee-kg",
+    section: "review",
+    featured: false,
+    title:
+      "Bridging Theory and Practice through LLM-Driven Knowledge Graph Construction",
+    authors: "Agnik Saha et al.",
+    venue: "Under review, IEEE International Conference on Big Data",
+    year: 2026,
+    links: [],
   },
 ];
 
@@ -392,7 +417,6 @@ export const collaboratorGroups = [
         interests:
           "Multimodal learning, vision-language models, large language models, knowledge graphs, reasoning",
         scholar: "https://scholar.google.com/citations?user=TwY8frYAAAAJ&hl=en",
-        shared: "Playing Devil’s Advocate: Unmasking Toxicity and Vulnerabilities in Large Vision-Language Models",
       },
       {
         id: "aktas",
@@ -400,15 +424,31 @@ export const collaboratorGroups = [
         role: "Coauthor",
         affiliation: "School of Data Science and Analytics, Kennesaw State University",
         scholar: "https://scholar.google.com/citations?user=t6NsNvoAAAAJ&hl=en",
-        shared: "Playing Devil’s Advocate: Unmasking Toxicity and Vulnerabilities in Large Vision-Language Models",
       },
       {
         id: "erol",
         name: "Abdulkadir Erol",
         role: "Coauthor",
         affiliation: "Ph.D. student, University of Central Florida",
-        shared: "Playing Devil’s Advocate: Unmasking Toxicity and Vulnerabilities in Large Vision-Language Models",
         paper: "https://dl.acm.org/doi/10.1145/3821418",
+      },
+      {
+        id: "xia",
+        name: "Yusen Xia",
+        role: "Collaborator",
+        affiliation:
+          "Anne and Michael D. Easterly Distinguished Professor and Director, Institute for Insight, Georgia State University",
+        interests:
+          "Machine learning, deep learning, generative AI, healthcare analytics, operations and supply chain management",
+        homepage: "https://robinson.gsu.edu/profile/yusen-xia/",
+      },
+      {
+        id: "yanqing-wang",
+        name: "Yanqing Wang",
+        role: "Collaborator",
+        affiliation: "Assistant Professor, Institute for Insight, Georgia State University",
+        interests: "Machine learning, survival analysis, image analysis",
+        homepage: "https://robinson.gsu.edu/profile/yanqing-wang/",
       },
       {
         id: "singla",
@@ -444,8 +484,6 @@ export const collaboratorGroups = [
         affiliation: "Assistant Professor, Morehouse School of Medicine",
         interests: "Digital health, health data science",
         scholar: "https://scholar.google.com/citations?user=QyPvblUAAAAJ&hl=en",
-        shared:
-          "Large Language Models for Cancer Communication: Evaluating Linguistic Quality, Safety, and Accessibility in Generative AI",
       },
       {
         id: "churchill",
@@ -454,8 +492,125 @@ export const collaboratorGroups = [
         affiliation: "Postdoctoral Fellow, Morehouse School of Medicine",
         interests: "Health communication, substance use",
         scholar: "https://scholar.google.com/citations?user=1IkuwfYAAAAJ&hl=en",
-        shared:
-          "Large Language Models for Cancer Communication: Evaluating Linguistic Quality, Safety, and Accessibility in Generative AI",
+      },
+    ],
+  },
+];
+
+const notes = "https://github.com/agnik2019/My_Teaching_Materials_Fall_2023/blob/main";
+
+export const teaching = [
+  {
+    id: "spring-2026",
+    term: "Spring 2026",
+    role: "Teaching Assistant",
+    org: "Georgia State University",
+    courses: [
+      {
+        name: "MSA 8600: Deep Learning and Generative AI",
+      },
+    ],
+    instructor: {
+      name: "Yanqing Wang",
+      href: "https://robinson.gsu.edu/profile/yanqing-wang/",
+    },
+  },
+  {
+    id: "fall-2025",
+    term: "Fall 2025",
+    role: "Teaching Assistant",
+    org: "Georgia State University",
+    courses: [
+      { name: "MSA 8010: Data Programming for Analytics" },
+      {
+        name: "IFI 8410: Introduction to Programming and Predictive Analytics for Business",
+      },
+    ],
+    instructor: {
+      name: "Ugur Kursuncu",
+      href: "https://www.ugurkursuncu.com/",
+    },
+  },
+  {
+    id: "fall-2023",
+    term: "August 2023 – December 2023",
+    role: "Lecturer",
+    org: "R. P. Shaha University, Department of CSE, Narayanganj, Bangladesh",
+    detail:
+      "Designed and delivered courses on Computer Architecture, Java, Statistics, and VLSI.",
+    repo: "https://github.com/agnik2019/My_Teaching_Materials_Fall_2023",
+    materials: [
+      {
+        course: "Java",
+        files: [
+          { label: "Introduction to Java", href: notes + "/Advanced_Java/1.%20Intro_Java.pdf" },
+          { label: "Object-oriented programming", href: notes + "/Advanced_Java/2.%20OOP_Java.pdf" },
+          {
+            label: "Inheritance and polymorphism",
+            href: notes + "/Advanced_Java/3.%20Inheritance_Polymorphism.pdf",
+          },
+          {
+            label: "Exception handling",
+            href: notes + "/Advanced_Java/4.%20Exception_handling.pdf",
+          },
+          { label: "GUI programming", href: notes + "/Advanced_Java/9.%20GUI_Programming.pdf" },
+        ],
+      },
+      {
+        course: "Computer Architecture",
+        files: [
+          {
+            label: "Introduction",
+            href: notes + "/Computer%20Architecture/1.%20Intro.pdf",
+          },
+          {
+            label: "CPU organization",
+            href: notes + "/Computer%20Architecture/2.%20CPU-Organization.pdf",
+          },
+          {
+            label: "Memory architecture",
+            href: notes + "/Computer%20Architecture/6.%20Memory_Architecture.pdf",
+          },
+        ],
+      },
+      {
+        course: "Statistics",
+        files: [
+          {
+            label: "Introduction to statistics",
+            href: notes + "/Statistics/Lec_1_Intro_to_Statistics.pdf",
+          },
+          {
+            label: "Measures of central tendency",
+            href: notes + "/Statistics/2.%20Measure_Of_Central_Tendency.pdf",
+          },
+          {
+            label: "Hypothesis testing",
+            href: notes + "/Statistics/Hypothesis_Class_note.pdf",
+          },
+        ],
+      },
+      {
+        course: "VLSI",
+        files: [
+          { label: "Introduction", href: notes + "/VLSI/1.%20VLSI_Intro.pdf" },
+          { label: "MOSFET", href: notes + "/VLSI/3.%20MOSFET.pdf" },
+          { label: "CMOS fabrication", href: notes + "/VLSI/5.%20CMOS_Fabrication.pdf" },
+        ],
+      },
+    ],
+  },
+  {
+    id: "iit-ta",
+    term: "Fall 2022 and Spring 2023",
+    role: "Teaching Assistant",
+    org: "Indian Institute of Technology Kharagpur",
+    detail:
+      "Conducted labs and tutorials for Programming and Data Structures (CS19003 and CS10003).",
+    links: [
+      {
+        label: "CS10003 course site",
+        href: "https://sites.google.com/view/cs10003-fall-2022/home",
       },
     ],
   },

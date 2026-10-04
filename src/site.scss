@@ -115,7 +115,6 @@
   gap: 1.25rem;
 }
 
-.theme-toggle,
 .nav-toggle {
   border: 1px solid var(--line);
   background: var(--surface);
@@ -129,22 +128,80 @@
   transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.theme-toggle:hover,
 .nav-toggle:hover {
   background: var(--surface);
   color: var(--accent);
   border-color: var(--line);
 }
 
-.theme-toggle:active,
 .nav-toggle:active {
   transform: scale(0.96);
+}
+
+.theme-toggle {
+  position: relative;
+  width: 3.15rem;
+  height: 1.7rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #eceae6;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.theme-toggle:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.theme-knob {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.16rem;
+  width: 1.28rem;
+  height: 1.28rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.theme-knob::before {
+  content: "";
+  position: absolute;
+  top: 0.28rem;
+  left: 0.28rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  border-radius: 50%;
+  background: #f5b942;
+  box-shadow: 0 0 0 2px rgba(245, 185, 66, 0.28);
+}
+
+.theme-toggle.is-dark {
+  background: #161616;
+  border-color: #3a3a3a;
+}
+
+.theme-toggle.is-dark .theme-knob {
+  transform: translateX(1.42rem);
+  background: #f4f4f5;
+}
+
+.theme-toggle.is-dark .theme-knob::before {
+  top: 0.22rem;
+  left: 0.38rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: transparent;
+  box-shadow: -0.28rem 0.08rem 0 0 #1d4e89;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.05rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -234,6 +291,10 @@
   margin-top: 3.25rem;
 }
 
+.pub-section {
+  margin-top: 2.5rem;
+}
+
 .pub-list,
 .project-list,
 .news-list,
@@ -273,6 +334,58 @@
 .resource-links a {
   font-weight: 600;
   text-decoration: none;
+}
+
+.advisor-list {
+  list-style: none;
+  margin: 0 0 0.35rem;
+  padding: 0;
+}
+
+.advisor-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1rem;
+  align-items: baseline;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.advisor-name {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.advisor-links {
+  display: flex;
+  gap: 0.85rem;
+}
+
+.advisor-links a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.teach-org {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.course-list {
+  margin: 0 0 0.75rem;
+  padding-left: 1.15rem;
+}
+
+.course-list li {
+  margin-bottom: 0.25rem;
+}
+
+.material-group {
+  margin-top: 0.85rem;
+}
+
+.material-group h3 {
+  margin-bottom: 0.35rem;
 }
 
 .more-link {

@@ -5,6 +5,13 @@ import PublicationList from "../components/PublicationList";
 import Page from "../components/Page";
 import { lineAnim, rise } from "../animation";
 
+const sections = [
+  { id: "published", title: "Published and accepted" },
+  { id: "abstract", title: "Conference abstracts" },
+  { id: "preprint", title: "Preprints" },
+  { id: "review", title: "Manuscripts under review" },
+];
+
 export default function Publications() {
   return (
     <Page>
@@ -23,7 +30,12 @@ export default function Publications() {
         </a>
         .
       </motion.p>
-      <PublicationList items={publications} />
+      {sections.map((section) => (
+        <section className="pub-section" key={section.id} aria-labelledby={section.id}>
+          <h2 id={section.id}>{section.title}</h2>
+          <PublicationList items={publications.filter((paper) => paper.section === section.id)} />
+        </section>
+      ))}
     </Page>
   );
 }

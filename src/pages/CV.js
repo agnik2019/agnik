@@ -147,9 +147,7 @@ export default function CV() {
           A full list with venues and links is on the{" "}
           <Link to="/publications">publications page</Link>. Profiles for advisors
           and coauthors are in the{" "}
-          <Link to={{ pathname: "/", hash: "#collaborators" }}>
-            collaborators section
-          </Link>
+          <Link to="/collaborators">collaborators page</Link>
           .
         </p>
       </section>

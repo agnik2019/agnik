@@ -14,7 +14,7 @@ function AboutCard() {
             <span className="purple">Atlanta, Georgia, USA.</span>
             <br />
             <br />
-            I am a PhD student in Computer Science at Georgia State University,
+            I am a PhD candidate in Computer Science at Georgia State University,
             working on <span className="purple">neuro-symbolic AI</span> and the
             integration of <span className="purple">knowledge graphs</span> with
             modern machine learning systems.
