@@ -151,7 +151,7 @@ export default function Home() {
             <a href={"mailto:" + profile.email}>{profile.email}</a>
           </p>
           <p className="lede">
-            Write to me about research collaboration, public-health communication, or online communities.
+            Happy to connect and collaborate on research. I’m always open to new ideas and perspectives.
           </p>
         </section>
       </Reveal>

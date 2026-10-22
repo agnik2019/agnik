@@ -18,7 +18,7 @@ export default function PublicationList({ items }) {
           <h3>{paper.title}</h3>
           <p className="authors">{paper.authors}</p>
           <p className="venue">
-            {paper.venue}, {paper.year}
+            {paper.venue === "Under review" ? "Under review." : paper.venue + ", " + paper.year}
           </p>
           {paper.links.length > 0 ? (
             <ul className="resource-links">

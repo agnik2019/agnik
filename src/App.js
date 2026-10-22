@@ -2,6 +2,7 @@ import React from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import GlobalStyle from "./components/GlobalStyle";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import ScrollTop from "./components/ScrollTop";
 import { ThemeProvider } from "./components/Theme";
 import Home from "./pages/Home";
@@ -33,6 +34,7 @@ function App() {
           <Redirect from="/work" to="/research" />
           <Redirect to="/" />
         </Switch>
+        <Footer />
       </div>
     </ThemeProvider>
   );

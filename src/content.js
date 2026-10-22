@@ -132,7 +132,7 @@ export const publications = [
       "Large Language Models Fine-Tuned on Reddit Data for Anxiety Support: Mixed Methods Evaluation",
     authors:
       "Ugur Kursuncu, Trilok Padhi, Gaurav Sinha, Jaya Krishna Mandivarapu, Agnik Saha, and Christopher R. Larrison",
-    venue: "Under review, JMIR",
+    venue: "Under review",
     year: 2026,
     links: [
       {
@@ -148,7 +148,7 @@ export const publications = [
     title:
       "Theory-Guided Multi-Turn Cancer Screening Communication With Large Language Models: Framework Development and Evaluation Study",
     authors: "Agnik Saha (first author) et al.",
-    venue: "Under review, JAMIA Open",
+    venue: "Under review",
     year: 2026,
     links: [],
   },
@@ -159,7 +159,7 @@ export const publications = [
     title:
       "Bridging Theory and Practice through LLM-Driven Knowledge Graph Construction",
     authors: "Agnik Saha et al.",
-    venue: "Under review, IEEE International Conference on Big Data",
+    venue: "Under review",
     year: 2026,
     links: [],
   },
@@ -449,6 +449,15 @@ export const collaboratorGroups = [
         affiliation: "Assistant Professor, Institute for Insight, Georgia State University",
         interests: "Machine learning, survival analysis, image analysis",
         homepage: "https://robinson.gsu.edu/profile/yanqing-wang/",
+      },
+      {
+        id: "molnar",
+        name: "Péter Molnár",
+        role: "Collaborator",
+        affiliation:
+          "Clinical Associate Professor, Institute for Insight, Georgia State University",
+        interests: "Data analytics, computational methods, modeling and simulation",
+        homepage: "https://robinson.gsu.edu/profile/peter-molnar/",
       },
       {
         id: "singla",
